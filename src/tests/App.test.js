@@ -6,10 +6,11 @@ import App from '../App';
 describe('Testes App', () => {
   test('Teste se o topo da aplicação contém um conjunto fixo de links de navegação', () => {
     renderWithRouter(<App />);
+    screen.logTestingPlaygroundURL();
 
-    const home = screen.getByText(/home/i);
-    const about = screen.getByText(/about/i);
-    const fPok = screen.getByText(/favorite/i);
+    const home = screen.getByRole('link', { name: /home/i });
+    const about = screen.getByRole('link', { name: /about/i });
+    const fPok = screen.getByRole('link', { name: /favorite/i });
 
     expect(home).toBeInTheDocument();
     expect(about).toBeInTheDocument();
