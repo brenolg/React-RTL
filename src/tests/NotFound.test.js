@@ -10,5 +10,10 @@ describe('Teste o componente <FavoritePokemons.js />', () => {
     const notFoundTitle = screen.getByRole('heading', { name: /page requested not found/i });
     expect(notFoundTitle).toBeInTheDocument();
   });
-  test.todo('Teste se a página mostra a imagem https://media.giphy.com/media/kNSeTs31XBZ3G/giphy.gif');
+
+  test('Teste se a página mostra a imagem https://media.giphy.com/media/kNSeTs31XBZ3G/giphy.gif', () => {
+    renderWithRouter(<NotFound />);
+    const cryngPikachu = screen.getByRole('img', { name: /pikachu crying because the page requested was not found/i });
+    expect(cryngPikachu).toHaveAttribute('src', 'https://media.giphy.com/media/kNSeTs31XBZ3G/giphy.gif');
+  });
 });
