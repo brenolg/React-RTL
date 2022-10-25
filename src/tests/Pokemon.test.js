@@ -9,16 +9,19 @@ describe('Teste o componente Pokemon.js ', () => {
     const normalBtn = screen.getByRole('button', { name: /normal/i });
     userEvent.click(normalBtn);
 
+    const snorlaxFilter = screen.getByRole('img', { name: /snorlax sprite/i });
+    expect(snorlaxFilter).toBeInTheDocument();
+
     const btnSnorlax = screen.getByRole('link', { name: /more details/i });
     userEvent.click(btnSnorlax);
 
-    const snorlax = screen.getByAltText('Snorlax sprite');
+    const snorlaxDetails = screen.getByRole('img', { name: /snorlax sprite/i });
     const normalType = screen.getByText(/normal/i);
     const weight = screen.getByText(/average weight: 460\.0 kg/i);
-
+    expect(snorlaxDetails).toBeInTheDocument();
     expect(weight).toBeInTheDocument();
     expect(normalType).toBeInTheDocument();
-    expect(snorlax).toHaveAttribute('src', 'https://cdn2.bulbagarden.net/upload/4/40/Spr_5b_143.png');
+    expect(snorlaxDetails).toHaveAttribute('src', 'https://cdn2.bulbagarden.net/upload/4/40/Spr_5b_143.png');
   });
 
   test('Teste se existe um ícone de estrela nos pokémons favoritados', () => {
