@@ -9,7 +9,6 @@ describe('Teste o componente FavoritePokemons', () => {
 
     const favoriteLink = screen.getByRole('link', { name: /favorite pokémons/i });
     userEvent.click(favoriteLink);
-    screen.logTestingPlaygroundURL();
 
     const noFavPok = screen.getByText(/no favorite pokemon found/i);
     expect(noFavPok).toBeInTheDocument();
