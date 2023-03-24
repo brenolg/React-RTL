@@ -1,13 +1,60 @@
-# :construction: README customizado em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto no qual você pode customizar e reutilizar todas as vezes que for executar o trybe-publisher.
+# Projeto React Testing Library
 
-Para deixá-lo com a sua cara, basta alterar o seguinte arquivo da sua máquina: ~/.student-repo-publisher/custom/_NEW_README.md
+Testes para uma aplicação React que já está criada e configurada, utilizando Jest e a biblioteca React Testing Library. 
 
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+A aplicação contém uma implementação completa de todos os requisitos da Pokédex. 
+
+## Funcionalidades
+
+- Utilizar os seletores (queries) da React-Testing-Library em testes automatizados;
+
+- Simular eventos com a React-Testing-Library em testes automatizados;
+
+- Testar fluxos lógicos assíncronos com a React-Testing-Library;
+
+- Escrever testes que permitam a refatoração da estrutura dos componentes da aplicação sem necessidade de serem alterados;
+
+- Testar inputs;
+
+## Tecnologias utilizadas
+- React
+- React Router
+- React Testing Library
+- Jest
+
+## Instalação do projeto localmente
+Para instalar o projeto localmente, siga os seguintes passos:
+
+Clone o repositório com o comando 
+
+```javascript
+git clone git@github.com:brenolg/rect-RTL.git
+```
+Instale as dependências com o comando.
+
+```javascript
+npm install
+```
+Inicie a aplicação 
+
+```javascript
+npm start
+```
+Executando os testes localmente
+
+```javascript
+npx stryker run ./stryker/nomeDoArquivo.conf.json
+```
+
+Abra o navegador e acesse http://localhost:3000.
+
+## Requisitos
+1. Teste o componente <App.js />
+2. Teste o componente <About.js />
+3. Teste o componente <FavoritePokemons.js />
+4. Teste o componente <NotFound.js />
+5. Teste o componente <Pokedex.js />
+6. Teste o componente <Pokemon.js />
+
+## Agradecimentos
+Agradecemos à Trybe por nos proporcionar esta oportunidade de aprendizado e crescimento profissional. Também agradecemos aos instrutores, colegas e mentores que nos apoiaram durante o desenvolvimento deste projeto.
