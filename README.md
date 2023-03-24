@@ -21,6 +21,7 @@ A aplicação contém uma implementação completa de todos os requisitos da Pok
 - React Router
 - React Testing Library
 - Jest
+- Javascript
 
 ## Instalação do projeto localmente
 Para instalar o projeto localmente, siga os seguintes passos:
