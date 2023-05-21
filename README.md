@@ -21,7 +21,6 @@ A aplicação contém uma implementação completa de todos os requisitos da Pok
 - React Router
 - React Testing Library
 - Jest
-- Javascript
 
 ## Instalação do projeto localmente
 Para instalar o projeto localmente, siga os seguintes passos:
@@ -29,7 +28,7 @@ Para instalar o projeto localmente, siga os seguintes passos:
 Clone o repositório com o comando 
 
 ```javascript
-git clone git@github.com:brenolg/rect-RTL.git
+git clone git@github.com:brenolg/React-RTL.git
 ```
 Instale as dependências com o comando.
 
